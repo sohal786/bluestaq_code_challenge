@@ -50,6 +50,6 @@ This repository contains solutions for two assessment problems: a JavaScript pro
   ```bash
   pip install matplotlib
 
-- Navigate to the directory that contains elevator.py file and run this command
-   ```bash
- python elevator.py    
+- Navigate to the directory that contains the `elevator.py` file and run the following command:
+  ```bash
+  python elevator.py
