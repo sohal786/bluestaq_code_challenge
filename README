@@ -1,0 +1,56 @@
+# Assessment Submission
+
+This repository contains solutions for two assessment problems: a JavaScript project and a Python elevator simulation.
+
+## Section 1: The Poet: JavaScript Project (app folder)
+
+### Expanded Functionality and features:
+#### Features:
+-Real time search suggestions or auto suggest search
+-Saving user search history 
+-Having an option to store favorite poems and authors
+-Improvements in UI and output Divs
+#### Code Improvements
+-Retry mechanism for api call (trying to send requests to server multiple times if initial one doesnt work) 
+-Currently Logging errors to the console but can optionally log to a remote logging service for better debugging
+-Do another fetch call to a alternative database to improve user experience in case the primary API fails. 
+-Showing better UI when HTTP error occurs
+
+    
+
+### How to Run
+Using VS CODE LIVE SERVER
+Open the project in VS Code and make sure all files index.html, script.js, errorHandler.js and style.css are in the same folder
+Right click index.html and select "Open with live server"
+
+USING BROWSER
+Locate index.html file and double click on it to open it in your default browser
+
+### Dependencies
+No dependencies required to install 
+
+
+## Section 2: Elevator Simulation 
+
+### Assumptions 
+-Single elevator is simulated (In real-life, there could be a multiple elevator system which would involove more complex algorithm for working like considering different heuristics for each user request.)
+
+-No real-time request processing (i.e., all requests are queued and then processed
+so no user can add request while the elevator is in motion; in real-life elevator can be requested while in motion so that it knows current floor of the user who requested)
+
+-No consideration for weight or the number of people in the elevator (this simulation does not account overall weight and number of people that can be on the elevator at once)
+
+### Features that could possibly be implemented
+-Multiple elevator system
+-A exit button which shuts down the elevator when someone has an emergency (so elevator would stop at the nearest floor level)
+-Having a base floor like the Ground floor or Lobby to increase efficiency (so the elevator would come to this for when idle as majority requests come from here)
+
+### Improvements in current code
+-Add robusts unit tests to for call_elevator and process_requests functions(I currently used log statements to check their functionality but unit codes would ensure the working when we change some logic in these functions.
+Example: we can add a test to check with requests are added properly for each queue)
+-Make the animation stop at each target floor of requests. (Currently the animation just shows the elevator movement so visualize the logic but it will be better in terms of UI if it stops at each floor to immitate real-life elevator)
+
+### How to Run
+-Make sure to have python installed in your system and your environment set up
+-Install matlab using pip or brew  | install matplotlib |
+-Navigate to the directory containing elevator.py and run "python elevator.py"

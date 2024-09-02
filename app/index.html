@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="pageTitle">PoetryDB Fetch Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="pageTitle">PoetryDB Fetch Test</h1>
+    <p id="searchInstruction">Search poem by Author, Title, or Both</p>
+    <div class="container">
+        <div>
+            <label for="authorInput">Author:</label>
+            <input type="text" id="authorInput" placeholder="Enter author name">
+        </div>
+        <div>
+            <label for="titleInput">Title:</label>
+            <input type="text" id="titleInput" placeholder="Enter title (optional)">
+        </div>
+        <button id="searchButton">Search</button>
+    </div>
+    
+    <div id="output"></div>
+    <div id="errorMessage"></div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
