@@ -49,3 +49,7 @@ This repository contains solutions for two assessment problems: a JavaScript pro
 - Install `matplotlib` using pip or brew:
   ```bash
   pip install matplotlib
+
+- Navigate to the directory that contains elevator.py file and run this command
+   ```bash
+ python elevator.py    
